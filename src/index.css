@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 220 25% 8%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 8%;
+
+    --primary: 252 85% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 94%;
+    --secondary-foreground: 220 25% 8%;
+
+    --muted: 220 14% 94%;
+    --muted-foreground: 220 10% 50%;
+
+    --accent: 172 80% 45%;
+    --accent-foreground: 220 25% 8%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --coral: 340 82% 62%;
+    --coral-foreground: 0 0% 100%;
+
+    --amber: 38 95% 55%;
+    --amber-foreground: 220 25% 8%;
+
+    --violet: 270 75% 60%;
+    --violet-foreground: 0 0% 100%;
+
+    --teal: 185 75% 42%;
+    --teal-foreground: 0 0% 100%;
+
+    --border: 220 14% 90%;
+    --input: 220 14% 90%;
+    --ring: 252 85% 60%;
+
+    --radius: 0.75rem;
+
+    --surface: 0 0% 100%;
+    --surface-alt: 220 14% 96%;
+    --surface-warm: 220 14% 94%;
+    --surface-dark: 220 25% 8%;
+    --text-secondary: 220 10% 50%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 252 85% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bricolage Grotesque', system-ui, sans-serif;
+    text-wrap: balance;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Bricolage Grotesque', system-ui, sans-serif;
+  }
+  .font-body {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+/* ======= ANOMAAT-STYLE SEXY BOX ======= */
+.anomaat-box {
+  border-radius: 32px;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(135deg, hsl(252 85% 60% / 0.08), hsl(172 80% 45% / 0.06), hsl(270 75% 60% / 0.04));
+  border: 1px solid hsl(var(--border));
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.anomaat-box:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 32px 64px -16px hsl(252 85% 60% / 0.15), 0 0 0 1px hsl(252 85% 60% / 0.1);
+}
+
+.anomaat-box-dark {
+  border-radius: 32px;
+  overflow: hidden;
+  position: relative;
+  background: hsl(var(--foreground));
+  color: hsl(var(--background));
+  border: 1px solid hsl(0 0% 100% / 0.08);
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.anomaat-box-dark:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 48px 80px -24px hsl(0 0% 0% / 0.4);
+}
+
+/* ======= SCROLL REVEAL ANIMATIONS ======= */
+@keyframes slide-up-reveal {
+  from { opacity: 0; transform: translateY(60px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-in-left {
+  from { opacity: 0; transform: translateX(-60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes blur-in {
+  from { opacity: 0; filter: blur(12px); }
+  to { opacity: 1; filter: blur(0); }
+}
+
+.scroll-reveal {
+  animation: slide-up-reveal 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+  animation-timeline: view();
+  animation-range: entry 0% entry 40%;
+}
+
+.scroll-reveal-left {
+  animation: slide-in-left 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+  animation-timeline: view();
+  animation-range: entry 0% entry 40%;
+}
+
+.scroll-reveal-right {
+  animation: slide-in-right 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+  animation-timeline: view();
+  animation-range: entry 0% entry 40%;
+}
+
+.scroll-scale-in {
+  animation: scale-in 1s cubic-bezier(0.23, 1, 0.32, 1) both;
+  animation-timeline: view();
+  animation-range: entry 0% entry 50%;
+}
+
+.scroll-blur-in {
+  animation: blur-in 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+  animation-timeline: view();
+  animation-range: entry 0% entry 35%;
+}
+
+/* ======= ANIMATIONS ======= */
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.animate-gradient {
+  background-size: 300% 300%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-30px) rotate(3deg); }
+}
+
+@keyframes float-medium {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(-2deg); }
+}
+
+.animate-float-slow { animation: float-slow 8s ease-in-out infinite; }
+.animate-float-medium { animation: float-medium 5s ease-in-out infinite; }
+
+/* ======= X-RAY BLEND LAYER ======= */
+.xray-text {
+  mix-blend-mode: difference;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+/* ======= SMOOTH GLOW EFFECTS ======= */
+.glow-primary {
+  box-shadow: 0 0 60px -12px hsl(252 85% 60% / 0.3);
+}
+
+.glow-accent {
+  box-shadow: 0 0 60px -12px hsl(172 80% 45% / 0.3);
+}
+
+.glow-violet {
+  box-shadow: 0 0 60px -12px hsl(270 75% 60% / 0.3);
+}
