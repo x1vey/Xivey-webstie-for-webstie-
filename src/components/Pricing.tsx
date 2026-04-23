@@ -1,13 +1,11 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Check, ArrowRight, Star } from "lucide-react";
+import { Check } from "lucide-react";
 import { pricingSection, pricingIncluded, pricingPlans } from "@/content.js";
 
 const included = pricingIncluded;
 
 const Pricing = () => {
-  const [billingCycle, setBillingCycle] = useState<"monthly" | "annual">("annual");
 
   return (
     <section id="pricing" className="py-24 md:py-48 relative overflow-hidden bg-background">
@@ -27,59 +25,11 @@ const Pricing = () => {
             </p>
           </motion.div>
 
-          {/* Toggle */}
-          <div className="flex items-center gap-4 bg-surface-alt p-1.5 rounded-full border border-border">
-            <button
-              onClick={() => setBillingCycle("monthly")}
-              className={`px-8 py-2.5 rounded-full text-sm font-bold transition-all ${
-                billingCycle === "monthly" ? "bg-foreground text-background shadow-lg" : "text-foreground/40 hover:text-foreground"
-              }`}
-            >
-              Monthly
-            </button>
-            <button
-              onClick={() => setBillingCycle("annual")}
-              className={`px-8 py-2.5 rounded-full text-sm font-bold transition-all ${
-                billingCycle === "annual" ? "bg-foreground text-background shadow-lg" : "text-foreground/40 hover:text-foreground"
-              }`}
-            >
-              Annual (Save 15%)
-            </button>
-          </div>
+          {/* Toggle removed — single plan */}
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 border-t border-l border-border">
-          {/* Monthly/Main Plan */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="p-12 md:p-16 border-r border-b border-border flex flex-col justify-between group"
-          >
-            <div>
-              <p className="text-xs font-black uppercase tracking-[0.2em] text-primary mb-8">{pricingPlans[0].badge}</p>
-              <h3 className="text-4xl font-black text-foreground mb-4">{pricingPlans[0].name}</h3>
-              <div className="flex items-baseline gap-2 mb-8">
-                <span className="text-7xl font-black tracking-tighter text-foreground">
-                  {billingCycle === "monthly" ? pricingPlans[0].monthlyPrice : pricingPlans[0].annualPrice}
-                </span>
-                <span className="text-xl font-bold text-muted-foreground">{pricingPlans[0].period}</span>
-              </div>
-              <ul className="space-y-4 mb-12">
-                {included.slice(0, 8).map((item) => (
-                  <li key={item} className="flex items-center gap-3 text-sm font-bold text-foreground/70 group-hover:text-foreground transition-colors">
-                    <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <Button size="lg" className="w-full h-16 rounded-full bg-foreground text-background hover:scale-[1.02] transition-transform font-black text-lg">
-              {pricingPlans[0].cta}
-            </Button>
-          </motion.div>
-
-          {/* Featured Plan */}
+        <div className="grid md:grid-cols-2 border-t border-l border-border max-w-4xl mx-auto">
+          {/* Featured Plan — $49 crossed out, $19/month for life */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -87,17 +37,17 @@ const Pricing = () => {
             className="p-12 md:p-16 border-r border-b border-border flex flex-col justify-between bg-foreground text-background group z-20 relative"
           >
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-6 py-1 rounded-full text-[10px] font-black tracking-[0.2em] uppercase">
-              Most Popular
+              Limited Offer
             </div>
             <div>
               <p className="text-xs font-black uppercase tracking-[0.2em] text-primary mb-8">{pricingPlans[1].badge}</p>
               <h3 className="text-4xl font-black text-background mb-4">{pricingPlans[1].name}</h3>
-              <div className="flex items-baseline gap-2 mb-8">
-                <span className="text-7xl font-black tracking-tighter text-background">
-                  {billingCycle === "monthly" ? pricingPlans[1].monthlyPrice : pricingPlans[1].annualPrice}
-                </span>
-                <span className="text-xl font-bold text-background/60">{pricingPlans[1].period}</span>
+              <div className="flex items-baseline gap-3 mb-2">
+                <span className="text-3xl font-black text-background/40 line-through">$49</span>
+                <span className="text-7xl font-black tracking-tighter text-background">$19</span>
+                <span className="text-xl font-bold text-background/60">/mo</span>
               </div>
+              <p className="text-sm font-bold text-primary mb-8">For life — locked in forever</p>
               <ul className="space-y-4 mb-12">
                 {included.map((item) => (
                   <li key={item} className="flex items-center gap-3 text-sm font-bold text-background/70">
@@ -108,11 +58,12 @@ const Pricing = () => {
               </ul>
             </div>
             <Button size="lg" className="w-full h-16 rounded-full bg-primary text-primary-foreground hover:scale-[1.02] transition-transform font-black text-lg">
-              {pricingPlans[1].cta}
+              Build My Website
             </Button>
+            <p className="text-center text-background/40 text-xs mt-3">Cancel anytime · No strings attached</p>
           </motion.div>
 
-          {/* Custom Plan */}
+          {/* Enterprise Plan */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}

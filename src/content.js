@@ -5,8 +5,8 @@
 // ─── BRAND ───────────────────────────────────────────────────
 export const brand = {
   name: "SiteCraft",
-  tagline: "Professional websites for service businesses at a fraction of the cost.",
-  description: "We build it. We host it. We maintain it. You run your business.",
+  tagline: "We build. We host. We maintain. You grow.",
+  description: "We build. We host. We maintain. You grow.",
 };
 
 // ─── NAVBAR ──────────────────────────────────────────────────
@@ -17,24 +17,25 @@ export const navLinks = [
   { label: "FAQ",          href: "#faq" },
 ];
 
-export const navCTA = { label: "Get Started", href: "#pricing" };
+export const navCTA = { label: "Get My Free Audit", href: "#how-it-works" };
 
 // ─── HERO ────────────────────────────────────────────────────
 export const hero = {
-  badge:       "Zero Setup Cost · Full Ownership",
-  headline:    ["Premium", "websites.", "$0 down."],
-  subheadline: "Custom build, hosting, and maintenance for one monthly price. No upfront fees.",
-  primaryCTA:  { label: "Build My Site", href: "#how-it-works" },
-  secondaryCTA:{ label: "View Pricing",  href: "#pricing" },
+  badge:       "No upfront fees · Cancel anytime · Fully owned by you",
+  headline:    ["Custom websites", "for growing", "businesses."],
+  subheadline: "We audit, redesign, and build your website from scratch — so it looks professional, loads fast, and turns visitors into customers. You only pay a small monthly care plan.",
+  primaryCTA:  { label: "Get My Free Website Audit", href: "#how-it-works" },
+  secondaryCTA:{ label: "View Pricing", href: "#pricing" },
+  trustLine:   "No upfront fees · Cancel anytime · Fully owned by you",
 };
 
 export const heroToasts = [
-  { label: "SEO Optimised",     desc: "Page 1 on Google",         accent: "bg-emerald-500" },
-  { label: "Lightning Fast",    desc: "Sub-second load times",    accent: "bg-amber-500"   },
-  { label: "24hr Delivery",     desc: "Live in one business day", accent: "bg-blue-500"    },
+  { label: "Free Audit",        desc: "We find what's broken",    accent: "bg-emerald-500" },
+  { label: "Custom Design",     desc: "Not templates",            accent: "bg-amber-500"   },
+  { label: "Fast Delivery",     desc: "Days, not months",         accent: "bg-blue-500"    },
   { label: "SSL & Security",    desc: "Enterprise-grade",         accent: "bg-violet-500"  },
-  { label: "Custom Design",     desc: "Tailored to your brand",   accent: "bg-rose-500"    },
-  { label: "Analytics Built-in",desc: "Track every visitor",      accent: "bg-cyan-500"    },
+  { label: "Mobile-First",      desc: "Looks great everywhere",   accent: "bg-rose-500"    },
+  { label: "Lead Capture",      desc: "Forms & CTAs built-in",    accent: "bg-cyan-500"    },
 ];
 
 export const heroCards = [
@@ -48,39 +49,39 @@ export const heroCards = [
 // ─── HOW IT WORKS ─────────────────────────────────────────────
 export const howItWorks = {
   badge:       "How It Works",
-  headline:    "Everything you need.",
-  subheadline: "Nothing you don't.",
-  body:        "Agencies charge £3,000–£10,000 for this. We deliver the same result — custom-built, live in 24 hours — for just $49/month.",
-  price:       { original: "$3,000+", current: "$49", period: "/month" },
-  cta:         { label: "Get My Site — $0 Today", href: "#pricing" },
+  headline:    "Simple 3-step process.",
+  subheadline: "Go live in days, not months.",
+  body:        "No tech knowledge needed. No upfront cost. We handle everything so you can focus on running your business.",
+  price:       { original: "$3,000+", current: "$19", period: "/month" },
+  cta:         { label: "Get My Free Website Audit", href: "#how-it-works" },
 };
 
 export const howItWorksBenefits = [
-  "Custom-designed website, built in 24 hours",
-  "Zero upfront cost — $0 to get started",
-  "SEO-optimised from day one",
-  "SSL, hosting & maintenance included",
-  "Unlimited special offer updates",
-  "A/B testing for funnels",
-  "Continuous support & adjustments",
+  "Custom-designed website — not a template",
+  "Zero upfront cost",
+  "Mobile-first, fast-loading pages",
+  "SEO-ready structure",
+  "Clear call-to-action setup",
+  "Lead capture system built-in",
+  "Ongoing support and edits included",
   "All done for you — zero effort on your end",
 ];
 
 export const howItWorksSteps = [
   {
     step:  "01",
-    title: "Apply in 5 minutes",
-    body:  "Tell us about your business. No tech knowledge needed. Just answer a few questions and we take it from there.",
+    title: "Submit your website",
+    body:  "Tell us about your business and current site. We take it from there.",
   },
   {
     step:  "02",
-    title: "We build it overnight",
-    body:  "Custom design, your branding, your copy. A professional site built while you sleep.",
+    title: "We audit and plan",
+    body:  "We identify what is broken and exactly how to fix it.",
   },
   {
     step:  "03",
-    title: "Go live in 24 hours",
-    body:  "We deploy, you wake up to a live website ready to convert.",
+    title: "We rebuild it",
+    body:  "You get a clean, fast, conversion-focused website. Go live in days, not months.",
   },
 ];
 
@@ -100,8 +101,8 @@ export const stats = [
 
 // ─── FEATURES ────────────────────────────────────────────────
 export const featuresSection = {
-  headline:    "Grow your business.",
-  subheadline: "Every tool you need to launch, manage, and scale your service business, built into one seamless experience.",
+  headline:    "Everything you need. Nothing you don't.",
+  subheadline: "Built to look good. Built to convert.",
 };
 
 export const featureCategories = [
@@ -113,89 +114,89 @@ export const featureCategories = [
 export const features = [
   {
     category:    "core",
-    title:       "Your Own Domain",
-    description: "Custom domain matching your brand. We handle DNS, SSL, and technical setup.",
+    title:       "Custom Design",
+    description: "Not a template. A website built specifically for your business, your brand, and your customers.",
     iconColor:   "text-primary",
   },
   {
     category:    "marketing",
-    title:       "Basic SEO Setup",
-    description: "On-page SEO, meta tags, and Google Business integration for local discovery.",
+    title:       "SEO-Ready Structure",
+    description: "On-page SEO, meta tags, and Google Business integration so customers can find you.",
     iconColor:   "text-accent",
   },
   {
     category:    "core",
-    title:       "Reliable Hosting",
-    description: "Enterprise-grade hosting with 99.9% uptime and automatic backups.",
+    title:       "Mobile-First Pages",
+    description: "Fast-loading, responsive design that looks great on every device.",
     iconColor:   "text-blue-600",
   },
   {
     category:    "marketing",
-    title:       "Analytics Dashboard",
-    description: "Full Google Analytics configuration to track your growth.",
+    title:       "Lead Capture Built-In",
+    description: "Forms, CTAs, and booking integrations set up so visitors become customers.",
     iconColor:   "text-indigo-600",
   },
   {
     category:    "security",
     title:       "SSL & Security",
-    description: "Free SSL certificate and malware monitoring for safe browsing.",
+    description: "Free SSL certificate and security monitoring so your site stays safe.",
     iconColor:   "text-cyan-600",
   },
   {
     category:    "core",
-    title:       "Performance First",
-    description: "Compressed images and minified code for lightning-fast speeds.",
+    title:       "Ongoing Support",
+    description: "Need a change? Just message us. Updates, edits, and improvements are all included.",
     iconColor:   "text-violet-600",
   },
 ];
 
 // ─── SHOWCASE (INDUSTRIES) ────────────────────────────────────
 export const showcaseSection = {
-  badge:    "Built For Scale",
-  headline: "Made with SiteCraft.",
+  badge:    "Real Work",
+  headline: "Websites we've built.",
 };
 
 export const industries = [
   {
     id:          "coaching",
-    label:       "Professional Coaching",
-    title:       "Coaches & Mentors",
-    description: "Launch your program with landing pages that convert cold leads into high-ticket clients.",
+    label:       "Coaches & Consultants",
+    title:       "Coaches & Consultants",
+    description: "Landing pages that convert cold leads into high-ticket clients.",
     color:       "bg-primary",
   },
   {
     id:          "practitioners",
-    label:       "Wellness",
-    title:       "Practitioners & Clinics",
-    description: "Stunning portfolio sites for health practitioners with HIPAA-ready booking flows.",
+    label:       "Service Businesses",
+    title:       "Service Businesses",
+    description: "HVAC, plumbing, cleaning, landscaping — sites built for local leads.",
     color:       "bg-accent",
   },
   {
     id:          "home-services",
-    label:       "Service Business",
-    title:       "Service Professionals",
-    description: "HVAC, Plumbing & Electrical sites built for high-volume local leads.",
+    label:       "Agencies",
+    title:       "Agencies",
+    description: "Case-study focused designs for creative and marketing agencies.",
     color:       "bg-indigo-600",
   },
   {
     id:          "legal",
-    label:       "Consulting",
+    label:       "Legal & Advisory",
     title:       "Legal & Advisory",
-    description: "Project authority with minimalist layouts designed for high-end boutique firms.",
+    description: "Professional layouts designed for law firms and consultants.",
     color:       "bg-blue-600",
   },
   {
     id:          "medical",
     label:       "Healthcare",
     title:       "Medical Practices",
-    description: "Multi-provider directories and patient resource portals built for trust.",
+    description: "Trust-focused sites for clinics, dentists, and health practitioners.",
     color:       "bg-cyan-600",
   },
   {
     id:          "advisory",
-    label:       "B2B Services",
-    title:       "Specialized Agencies",
-    description: "Case-study focused designs for creative, technical and marketing consultants.",
+    label:       "Local Businesses",
+    title:       "Local Businesses",
+    description: "If your website needs to bring in customers — this is for you.",
     color:       "bg-violet-600",
   },
 ];
@@ -203,24 +204,24 @@ export const industries = [
 // ─── STICKY REVEAL (WHY US) ───────────────────────────────────
 export const stickyReveal = {
   badge:    "Why Us",
-  headline: "Built to last.",
-  body:     "We don't just build websites; we build business tools that scale with you. No technical debt, no performance bottlenecks.",
+  headline: "We handle everything.",
+  body:     "We don't just design websites. We rebuild your entire online presence so it actually works for your business.",
 };
 
 export const stickyRevealFeatures = [
   {
-    title:       "Enterprise Grade Infrastructure",
-    description: "We host your site on global edge networks with 99.99% uptime. Your site is always fast, no matter where your customers are.",
+    title:       "Audit First",
+    description: "We start by identifying exactly what is broken on your current site and why it is not converting visitors into customers.",
     iconBg:      "bg-primary",
   },
   {
-    title:       "Conversion-Focused UX",
-    description: "Every pixel is optimized to turn visitors into paying customers. From mobile-first design to one-click booking forms.",
+    title:       "Conversion-Focused Build",
+    description: "Every page is structured to guide visitors toward taking action — calling, booking, or buying.",
     iconBg:      "bg-amber",
   },
   {
-    title:       "Organic SEO Dominance",
-    description: "Our sites are built for Google. Automatic XML sitemaps, structured data, and minified assets for maximum visibility.",
+    title:       "Ongoing Care Included",
+    description: "Hosting, maintenance, updates, backups, security, and support — all included in your monthly plan.",
     iconBg:      "bg-accent",
   },
 ];
@@ -245,8 +246,8 @@ export const exampleSites = [
 // ─── TESTIMONIALS ─────────────────────────────────────────────
 export const testimonialsSection = {
   badge:    "Real Stories",
-  headline: "Trusted by real businesses.",
-  body:     "Hundreds of service professionals trust us with their online presence.",
+  headline: "Trusted by real business owners.",
+  body:     "Real websites for real businesses — designed to perform.",
 };
 
 export const testimonials = [
@@ -272,50 +273,52 @@ export const testimonials = [
 
 // ─── PRICING ─────────────────────────────────────────────────
 export const pricingSection = {
-  headline:    "Simple. Transparent.",
-  subheadline: "$0 down, everything included, cancel anytime. No hidden fees or surprise billings.",
+  headline:    "No upfront cost. Simple monthly plan.",
+  subheadline: "We sponsor the website build. You only pay a small monthly care plan that covers everything.",
 };
 
 export const pricingIncluded = [
   "Custom-designed website",
   "Your own domain name",
   "Hosting & SSL certificate",
-  "Basic SEO setup",
-  "Google Analytics",
-  "Ongoing maintenance & changes",
+  "Maintenance & backups",
+  "Security monitoring",
+  "Ongoing updates & edits",
   "Mobile-responsive design",
-  "Contact form integration",
-  "Performance optimization",
+  "Lead capture forms",
+  "Google Analytics setup",
 ];
 
 export const pricingPlans = [
   {
     id:          "standard",
-    badge:       "Base Platform",
+    badge:       "Care Plan",
     name:        "Standard",
-    monthlyPrice:"$49",
-    period:      "$49/mo",
-    cta:         "Get Started",
+    monthlyPrice:"$19",
+    annualPrice: "$19",
+    period:      "/mo",
+    cta:         "Get My Free Audit",
     featured:    false,
   },
   {
     id:          "professional",
-    badge:       "Everything + Strategy",
+    badge:       "Care Plan + Growth",
     name:        "Professional",
-    annualPrice: "$499",
-    period:      "/year",
-    cta:         "Go Pro Now",
+    monthlyPrice:"$49",
+    annualPrice: "$49",
+    period:      "/mo",
+    cta:         "Get My Free Audit",
     featured:    true,
     featuredLabel:"Most Popular",
   },
   {
     id:          "enterprise",
-    badge:       "Scale & Expand",
+    badge:       "Multi-Location",
     name:        "Enterprise",
     price:       "Custom",
-    description: "For multi-location service businesses.",
-    body:        "Dedicated project manager, advanced integrations, and specialized SEO campaigns for each location.",
-    cta:         "Contact Sales",
+    description: "For businesses with multiple locations.",
+    body:        "Dedicated project manager, multiple sites, advanced integrations and specialized SEO for each location.",
+    cta:         "Contact Us",
     featured:    false,
   },
 ];
@@ -329,52 +332,52 @@ export const faqSection = {
 
 export const faqs = [
   {
-    q: "Is the website build really free?",
-    a: "Yes — 100%. We design and build your website at absolutely no cost. You only pay the monthly subscription which covers hosting, and maintenance. There are no setup fees or hidden charges.",
+    q: "Is the website really free?",
+    a: "Yes. We cover the build cost entirely. You only pay a small monthly care plan that includes hosting, maintenance, updates, backups, security, and ongoing support.",
   },
   {
-    q: "What kind of businesses do you work with?",
-    a: "We specialize in service-based businesses — HVAC, plumbing, legal, medical, consulting, landscaping, cleaning, real estate, and more. If you provide a service to local or national customers, we're a great fit.",
+    q: "Do I own the website?",
+    a: "Yes. It is fully yours. If you ever want to move it elsewhere, you can — no lock-in.",
   },
   {
-    q: "How can we capture leads?",
-    a: "We will add and connect your forms and booking pages in your website.",
+    q: "How long does it take?",
+    a: "Typically a few days to a couple of weeks depending on complexity. We will always give you a clear timeline upfront.",
   },
   {
-    q: "Do you provide analytics?",
-    a: "Yes, we can connect Google Analytics so you can track visitors and see how your website is performing.",
-  },
-  {
-    q: "What if I need changes to my website?",
-    a: "Just send us a message. Updates like text, images, business hours, or promotions are all included in your plan. Most requests are completed within 24–48 business hours. For larger updates like new pages or major redesigns, we’ll always confirm scope and pricing upfront.",
+    q: "What if I need changes?",
+    a: "Just send us a message. Ongoing updates and edits are included in your monthly plan.",
   },
   {
     q: "Can I cancel anytime?",
-    a: "Absolutely. There are no long-term contracts. If you cancel, your website stays live through the end of your billing period.",
+    a: "Yes. No lock-in, no long-term contracts. Cancel whenever you want.",
   },
   {
-    q: "How long does it take to build my website?",
-    a: "Your website is typically ready within 24 hours. You can then review and request changes—we handle revisions quickly, and for larger updates, we’ll confirm timelines upfront before launch.",
+    q: "What kind of businesses do you work with?",
+    a: "Coaches, consultants, service businesses, agencies, and local businesses. If your website needs to bring in customers, we are a great fit.",
   },
   {
-    q: "What's included in the SEO setup?",
-    a: "We take care of the SEO basics so your website is ready to be found on Google.",
+    q: "What does the free audit include?",
+    a: "We review your current website and identify exactly what is holding it back — slow load times, unclear messaging, missing CTAs, poor mobile experience, and more. Then we show you how to fix it.",
+  },
+  {
+    q: "Do you provide analytics?",
+    a: "Yes. We set up Google Analytics so you can track visitors, traffic sources, and how your site is performing.",
   },
 ];
 
 // ─── CTA ─────────────────────────────────────────────────────
 export const cta = {
-  headline:    "Ready to launch?",
-  subheadline: "Join the elite businesses who've already transformed their presence.",
-  primaryCTA:  { label: "Start My Build",   href: "#pricing"      },
-  secondaryCTA:{ label: "Process Details",  href: "#how-it-works" },
-  footnotes:   ["No Commitment Required", "$0 Initial Investment", "Cancel Anytime"],
+  headline:    "Ready to upgrade your website?",
+  subheadline: "Let us show you what is holding your site back — and how to fix it.",
+  primaryCTA:  { label: "Get My Free Website Audit", href: "#how-it-works" },
+  secondaryCTA:{ label: "View Pricing",              href: "#pricing"      },
+  footnotes:   ["No Upfront Fees", "Fully Owned By You", "Cancel Anytime"],
 };
 
 // ─── MARQUEE ─────────────────────────────────────────────────
 export const marqueeLogos = [
-  "PLUMBERS INC", "SALON PRO", "ELITE HVAC", "LAW CARE", "DENTAL WEB",
-  "COFFEE CO", "FITNESS PLUS", "SPA RETREAT", "AUTO REPAIR", "PET CARE",
+  "COACHES", "CONSULTANTS", "HVAC", "PLUMBERS", "LAW FIRMS",
+  "DENTISTS", "FITNESS", "CLEANING CO", "REAL ESTATE", "AGENCIES",
 ];
 
 // ─── FOOTER ──────────────────────────────────────────────────

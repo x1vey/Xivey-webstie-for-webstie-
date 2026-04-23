@@ -144,6 +144,20 @@ const HowItWorks = () => {
                 <span className="text-white/60 font-bold">{howItWorksSocialProof.count} {howItWorksSocialProof.label}</span>
               </p>
             </motion.div>
+
+            {/* CTA */}
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              className="pt-6"
+            >
+              <Button size="lg" className="w-full h-16 rounded-full bg-white text-black font-black text-base hover:bg-white/90 transition-all shadow-xl active:scale-[0.97]" asChild>
+                <a href="#pricing">Build My Website — $19/m <ArrowRight size={18} className="ml-2" /></a>
+              </Button>
+              <p className="text-center text-white/30 text-xs mt-3 font-medium">Cancel anytime · No strings attached</p>
+            </motion.div>
           </div>
 
         </div>
