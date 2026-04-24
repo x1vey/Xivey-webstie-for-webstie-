@@ -21,17 +21,17 @@ export const navCTA = { label: "Get My Free Audit", href: "#how-it-works" };
 
 // ─── HERO ────────────────────────────────────────────────────
 export const hero = {
-  badge:       "No upfront fees · Cancel anytime · Fully owned by you",
-  headline:    ["Custom websites", "for growing", "businesses."],
-  subheadline: "We audit, redesign, and build your website from scratch — so it looks professional, loads fast, and turns visitors into customers. You only pay a small monthly care plan.",
-  primaryCTA:  { label: "Get My Free Website Audit", href: "#how-it-works" },
-  secondaryCTA:{ label: "View Pricing", href: "#pricing" },
-  trustLine:   "No upfront fees · Cancel anytime · Fully owned by you",
+  badge:       "FOR SERVICE BUSINESSES",
+  headline:    ["Your website is telling", "the wrong clients", "to stay."],
+  subheadline: "We audit, redesign, and build your website from scratch — no upfront cost. You pay a simple monthly plan that covers everything.",
+  primaryCTA:  { label: "Get My Free Audit", href: "#how-it-works" },
+  secondaryCTA:{ label: "See Our Work", href: "#work" },
+  trustLine:   "NO UPFRONT FEES · YOU OWN YOUR SITE · CANCEL ANYTIME",
 };
 
 export const heroToasts = [
-  { label: "Free Audit",        desc: "We find what's broken",    accent: "bg-emerald-500" },
-  { label: "Custom Design",     desc: "Not templates",            accent: "bg-amber-500"   },
+  { label: "Custom Design",     desc: "Not templates",            accent: "bg-emerald-500" },
+  { label: "Conversion Setup",  desc: "Built to perform",         accent: "bg-amber-500"   },
   { label: "Fast Delivery",     desc: "Days, not months",         accent: "bg-blue-500"    },
   { label: "SSL & Security",    desc: "Enterprise-grade",         accent: "bg-violet-500"  },
   { label: "Mobile-First",      desc: "Looks great everywhere",   accent: "bg-rose-500"    },
@@ -42,15 +42,15 @@ export const heroCards = [
   { image: "https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&q=60&w=600", title: "Landscaping",  top: "12%", left: "6%",  width: "340px", rotate: "-6deg" },
   { image: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=60&w=600", title: "Legal Firm",   top: "48%", left: "32%", width: "400px", rotate: "4deg"  },
   { image: "https://images.unsplash.com/photo-1540555700478-4be289aefec9?auto=format&fit=crop&q=60&w=600", title: "Wellness Spa", top: "76%", left: "62%", width: "360px", rotate: "-3deg" },
-  { image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=60&w=600", title: "Tech Agency",  top: "18%", left: "72%", width: "300px", rotate: "8deg"  },
+  { image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=60&w=600", title: "Consulting",   top: "18%", left: "72%", width: "300px", rotate: "8deg"  },
   { image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=60&w=600", title: "Agency",       top: "62%", left: "8%",  width: "280px", rotate: "5deg"  },
 ];
 
 // ─── HOW IT WORKS ─────────────────────────────────────────────
 export const howItWorks = {
-  badge:       "How It Works",
-  headline:    "Simple 3-step process.",
-  subheadline: "Go live in days, not months.",
+  badge:       "HOW IT WORKS",
+  headline:    "Three steps. Live in days.",
+  subheadline: "A simple, transparent process to get your new site live.",
   body:        "No tech knowledge needed. No upfront cost. We handle everything so you can focus on running your business.",
   price:       { original: "$3,000+", current: "$19", period: "/month" },
   cta:         { label: "Get My Free Website Audit", href: "#how-it-works" },
@@ -70,18 +70,18 @@ export const howItWorksBenefits = [
 export const howItWorksSteps = [
   {
     step:  "01",
-    title: "Submit your website",
-    body:  "Tell us about your business and current site. We take it from there.",
+    title: "We Audit First",
+    body:  "We dig into your current site and identify exactly what's signalling the wrong things to the right people — before we touch a single pixel.",
   },
   {
     step:  "02",
-    title: "We audit and plan",
-    body:  "We identify what is broken and exactly how to fix it.",
+    title: "We Build It Right",
+    body:  "Custom design. Your brand. Your story. Structured to guide visitors from curious to convinced — no templates, no drag-and-drop guesswork.",
   },
   {
     step:  "03",
-    title: "We rebuild it",
-    body:  "You get a clean, fast, conversion-focused website. Go live in days, not months.",
+    title: "We Handle Everything After",
+    body:  "Hosting, maintenance, security, updates, backups. It's all included in your monthly plan. You run your business. We keep your site sharp.",
   },
 ];
 
@@ -101,8 +101,8 @@ export const stats = [
 
 // ─── FEATURES ────────────────────────────────────────────────
 export const featuresSection = {
-  headline:    "Everything you need. Nothing you don't.",
-  subheadline: "Built to look good. Built to convert.",
+  headline:    "Everything it needs. Nothing it doesn't.",
+  subheadline: "Every page is sequenced to move a visitor toward one action.",
 };
 
 export const featureCategories = [
@@ -115,45 +115,45 @@ export const features = [
   {
     category:    "core",
     title:       "Custom Design",
-    description: "Not a template. A website built specifically for your business, your brand, and your customers.",
+    description: "Built specifically for your business and your clients. Not a theme. Not a template.",
     iconColor:   "text-primary",
   },
   {
     category:    "marketing",
-    title:       "SEO-Ready Structure",
-    description: "On-page SEO, meta tags, and Google Business integration so customers can find you.",
+    title:       "Conversion Structure",
+    description: "Every page is sequenced to move a visitor toward one action — calling, booking, or buying.",
     iconColor:   "text-accent",
   },
   {
     category:    "core",
-    title:       "Mobile-First Pages",
-    description: "Fast-loading, responsive design that looks great on every device.",
+    title:       "Mobile-First Build",
+    description: "Looks and performs exactly right on every device. Always.",
     iconColor:   "text-blue-600",
   },
   {
     category:    "marketing",
-    title:       "Lead Capture Built-In",
-    description: "Forms, CTAs, and booking integrations set up so visitors become customers.",
+    title:       "Lead Capture Built In",
+    description: "Forms, calls-to-action, and booking flows — designed to turn visitors into enquiries.",
     iconColor:   "text-indigo-600",
   },
   {
     category:    "security",
     title:       "SSL & Security",
-    description: "Free SSL certificate and security monitoring so your site stays safe.",
+    description: "Enterprise-grade protection. Your site stays safe and trusted by browsers.",
     iconColor:   "text-cyan-600",
   },
   {
     category:    "core",
     title:       "Ongoing Support",
-    description: "Need a change? Just message us. Updates, edits, and improvements are all included.",
+    description: "Need a change? Just message us. Updates and edits are included. No tickets. No waiting.",
     iconColor:   "text-violet-600",
   },
 ];
 
 // ─── SHOWCASE (INDUSTRIES) ────────────────────────────────────
 export const showcaseSection = {
-  badge:    "Real Work",
-  headline: "Websites we've built.",
+  badge:    "WHO WE BUILD FOR",
+  headline: "If your business needs better clients, this is for you.",
 };
 
 export const industries = [
@@ -203,25 +203,25 @@ export const industries = [
 
 // ─── STICKY REVEAL (WHY US) ───────────────────────────────────
 export const stickyReveal = {
-  badge:    "Why Us",
-  headline: "We handle everything.",
-  body:     "We don't just design websites. We rebuild your entire online presence so it actually works for your business.",
+  badge:    "WHY SITECRAFT",
+  headline: "We don't just design websites. We rebuild how your business is perceived.",
+  body:     "Most web designers hand you a site and disappear. We start with a full audit, build around your actual conversion goals, and stay on to maintain everything.",
 };
 
 export const stickyRevealFeatures = [
   {
     title:       "Audit First",
-    description: "We start by identifying exactly what is broken on your current site and why it is not converting visitors into customers.",
+    description: "We identify exactly what's broken and why it's costing you better clients — before we design a single page.",
     iconBg:      "bg-primary",
   },
   {
-    title:       "Conversion-Focused Build",
-    description: "Every page is structured to guide visitors toward taking action — calling, booking, or buying.",
+    title:       "Conversion-Focused",
+    description: "Every layout decision is made to guide your visitors toward one outcome. Not to look impressive. To perform.",
     iconBg:      "bg-amber",
   },
   {
-    title:       "Ongoing Care Included",
-    description: "Hosting, maintenance, updates, backups, security, and support — all included in your monthly plan.",
+    title:       "Ongoing Partnership",
+    description: "We're not a one-time vendor. Hosting, updates, maintenance, and support — all included, every month.",
     iconBg:      "bg-accent",
   },
 ];
@@ -273,12 +273,12 @@ export const testimonials = [
 
 // ─── PRICING ─────────────────────────────────────────────────
 export const pricingSection = {
-  headline:    "No upfront cost. Simple monthly plan.",
-  subheadline: "We sponsor the website build. You only pay a small monthly care plan that covers everything.",
+  headline:    "No upfront cost. One simple monthly plan.",
+  subheadline: "We sponsor the build. You pay a small monthly fee that covers everything.",
 };
 
 export const pricingIncluded = [
-  "Custom-designed website",
+  "Custom-designed website — not a template",
   "Your own domain name",
   "Hosting & SSL certificate",
   "Maintenance & backups",
@@ -302,14 +302,14 @@ export const pricingPlans = [
   },
   {
     id:          "professional",
-    badge:       "Care Plan + Growth",
+    badge:       "LIMITED OFFER",
     name:        "Professional",
     monthlyPrice:"$49",
     annualPrice: "$49",
     period:      "/mo",
-    cta:         "Get My Free Audit",
+    cta:         "Build My Website",
     featured:    true,
-    featuredLabel:"Most Popular",
+    featuredLabel:"Locked in forever at this rate",
   },
   {
     id:          "enterprise",
@@ -332,43 +332,43 @@ export const faqSection = {
 
 export const faqs = [
   {
-    q: "Is the website really free?",
-    a: "Yes. We cover the build cost entirely. You only pay a small monthly care plan that includes hosting, maintenance, updates, backups, security, and ongoing support.",
+    q: "Is the website really free to build?",
+    a: "Yes — we cover the full cost of designing and building your site. You don't pay anything upfront. The monthly plan starts when your site goes live and covers hosting, maintenance, updates, and support.",
   },
   {
     q: "Do I own the website?",
-    a: "Yes. It is fully yours. If you ever want to move it elsewhere, you can — no lock-in.",
+    a: "Yes. The site is yours. Your domain, your content, your asset. If you ever leave, you take it with you. No lock-in.",
   },
   {
-    q: "How long does it take?",
-    a: "Typically a few days to a couple of weeks depending on complexity. We will always give you a clear timeline upfront.",
+    q: "How long does it take to go live?",
+    a: "Most sites are live within 7–14 days from the audit. We move fast because we have a clear process — not because we cut corners.",
   },
   {
-    q: "What if I need changes?",
-    a: "Just send us a message. Ongoing updates and edits are included in your monthly plan.",
+    q: "What if I need changes after launch?",
+    a: "Just message us. Edits, updates, and improvements are included in your monthly plan. There's no separate charge for changes and no support tickets to raise.",
   },
   {
     q: "Can I cancel anytime?",
-    a: "Yes. No lock-in, no long-term contracts. Cancel whenever you want.",
+    a: "Yes. No contracts, no cancellation fees. If you decide to leave, your site remains yours. We'll help you migrate it wherever you want to go.",
   },
   {
     q: "What kind of businesses do you work with?",
-    a: "Coaches, consultants, service businesses, agencies, and local businesses. If your website needs to bring in customers, we are a great fit.",
+    a: "We work with service businesses, consultants, coaches, medical and legal professionals, agencies, and local businesses — any business where the website is expected to attract and convert clients.",
   },
   {
     q: "What does the free audit include?",
-    a: "We review your current website and identify exactly what is holding it back — slow load times, unclear messaging, missing CTAs, poor mobile experience, and more. Then we show you how to fix it.",
+    a: "We review your current site across four dimensions: visual trust signals, conversion structure, mobile performance, and messaging clarity. You'll receive a clear breakdown of what's working, what's losing you clients, and what we'd fix.",
   },
   {
     q: "Do you provide analytics?",
-    a: "Yes. We set up Google Analytics so you can track visitors, traffic sources, and how your site is performing.",
+    a: "Yes. Google Analytics is set up as standard so you can see exactly where visitors come from and what they do on your site. We can also set up conversion tracking to measure enquiries and bookings directly.",
   },
 ];
 
 // ─── CTA ─────────────────────────────────────────────────────
 export const cta = {
-  headline:    "Ready to upgrade your website?",
-  subheadline: "Let us show you what is holding your site back — and how to fix it.",
+  headline:    "Ready to stop losing clients to a website that undersells you?",
+  subheadline: "Let us show you what's holding your site back — and how we fix it.",
   primaryCTA:  { label: "Get My Free Website Audit", href: "#how-it-works" },
   secondaryCTA:{ label: "View Pricing",              href: "#pricing"      },
   footnotes:   ["No Upfront Fees", "Fully Owned By You", "Cancel Anytime"],
